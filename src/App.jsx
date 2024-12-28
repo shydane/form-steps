@@ -1,32 +1,24 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="bg-slate-800 max-w-72 m-auto text-center">
+        <div className="flex justify-around m-4">
+          <div className="bg-green-400 px-3 py-1 rounded-2xl active:bg-green-700">
+            1
+          </div>
+          <div className="bg-green-400 px-3 py-1 rounded-2xl active:bg-green-700">
+            2
+          </div>
+          <div className="bg-green-400 px-3 py-1 rounded-2xl active:bg-green-700">
+            3
+          </div>
+        </div>
+        <p className=" p-4">Step: dream</p>
+        <div className=" p-5 flex justify-between">
+          <button className="bg-green-400 px-3 py-1 rounded-2xl">Prev</button>
+          <button className="bg-green-400 px-3 py-1 rounded-2xl">Next</button>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   );
 }
