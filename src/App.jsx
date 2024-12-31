@@ -23,22 +23,28 @@ function App() {
         <div className="bg-slate-800 max-w-72 m-auto text-center">
           <div className="flex p-4 justify-around m-4">
             <div
-              className={`text-cyan-400 px-3 py-1 rounded-2xl ${
-                step >= 1 ? "text-slate-700 bg-cyan-500" : "bg-slate-700"
+              className={`px-3 py-1 rounded-2xl ${
+                step >= 1
+                  ? "text-slate-700 bg-cyan-400"
+                  : "bg-slate-700 text-cyan-400"
               }`}
             >
               1
             </div>
             <div
-              className={`text-cyan-400 px-3 py-1 rounded-2xl ${
-                step >= 2 ? "text-slate-700 bg-cyan-500" : "bg-slate-700"
+              className={`px-3 py-1 rounded-2xl ${
+                step >= 2
+                  ? "text-slate-700 bg-cyan-400"
+                  : "bg-slate-700 text-cyan-400"
               }`}
             >
               2
             </div>
             <div
-              className={`text-cyan-400 px-3 py-1 rounded-2xl ${
-                step >= 3 ? "bg-cyan-500 text-slate-700" : "bg-slate-700"
+              className={`px-3 py-1 rounded-2xl ${
+                step >= 3
+                  ? "bg-cyan-400 text-slate-700"
+                  : "bg-slate-700 text-cyan-400"
               }`}
             >
               3
